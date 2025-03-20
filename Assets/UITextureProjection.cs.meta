@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: d4973e58d42b240e78b93535886e02e1
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - m_TargetCamera: {instanceID: 0}
+  - TargetPanel: {fileID: 11400000, guid: 27b8efbcb810840299dfea5703034d53, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 0
+    path: Assets/Makerbot3DPrinter/DemoScene/3dPrinter.unity
+    guid: b974f6db58af1bd4881c17c03a3266d1
+  - enabled: 1
+    path: Assets/Scenes/StartScene.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/3DDemoScene.unity
+    guid: 29b9874641d5e432988e24b7f0aeea9a
+  m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 77cb0d9aa281a41229c49bbb2fb2c121, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: efba3c37894c944a2bf309ed39b57090, type: 2}
