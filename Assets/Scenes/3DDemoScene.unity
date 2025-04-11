@@ -2746,6 +2746,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15e9a46c222a3469f98591c03fb44661, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  StartScreen: {fileID: 0}
+  LOScreen: {fileID: 0}
+  pages: []
 --- !u!1 &946323786
 GameObject:
   m_ObjectHideFlags: 0

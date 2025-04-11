@@ -1,6 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
-using JetBrains.Annotations;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -8,17 +6,15 @@ public class ButtonHandlers : MonoBehaviour
 {
     [SerializeField] GameObject StartScreen;
     [SerializeField] GameObject LOScreen;
-    [SerializeField] LearningObjectivesUI LOUI;
-    public void sayHello(string message) {
-        Debug.Log($"Hello from button {message}");
-    }
+    [SerializeField] GameObject[] pages;
+
 
     public void handleExplore3DPrinterButtonClick()
     {
         StartCoroutine(open3DPrinterScence());
     }
 
-    IEnumerator open3DPrinterScence()
+    static IEnumerator open3DPrinterScence()
     {
         yield return new WaitForSeconds(1.0f);
         SceneManager.LoadScene(1);
@@ -29,24 +25,34 @@ public class ButtonHandlers : MonoBehaviour
         StartCoroutine(exit3DPrinterScence());
     }
 
-    IEnumerator exit3DPrinterScence()
+    static IEnumerator exit3DPrinterScence()
     {
         yield return new WaitForSeconds(1.0f);
         SceneManager.LoadScene(0);
     }
 
-    public void loadLOScreen()
+    public void switchPage(int from, int to)
     {
-        StartScreen.SetActive(false);
-        LOScreen.SetActive(true);
+        if (from == 0)
+        {
+            StartScreen.SetActive(false);
+            pages[0].SetActive(false);
+            LOScreen.SetActive(true);
+            pages[to].SetActive(true);
+        }
+        else if (to == 0)
+        {
+            LOScreen.SetActive(false);
+            pages[from].SetActive(false);
+            StartScreen.SetActive(true);
+            pages[0].SetActive(true);
+        }
+        else
+        {
+            pages[from].SetActive(false);
+            pages[to].SetActive(true);
+
+        }
     }
 
-    public void exitLOScreen()
-    {
-        // reset learning objectives screen data
-        LOUI.resetLOScreen();
-
-        LOScreen.SetActive(false);
-        StartScreen.SetActive(true);
-    }
 }

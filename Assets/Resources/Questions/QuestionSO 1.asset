@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: QuestionSO 1
+  m_EditorClassIdentifier: Assembly-CSharp::QuestionSO
+  _question: 'Q1: What is the key difference between additive and subtractive manufacturing?  '
+  _answers:
+  - _text: A) Additive manufacturing removes material from a solid block to create
+      a part.
+    _isCorrect: 0
+  - _text: B) Additive manufacturing builds parts layer by layer, while subtractive
+      manufacturing removes material.
+    _isCorrect: 1
+  - _text: C) Additive manufacturing is only used for plastics, while subtractive
+      manufacturing is used for metals.
+    _isCorrect: 0
+  - _text: D) Additive manufacturing is a type of subtractive manufacturing.
+    _isCorrect: 0
